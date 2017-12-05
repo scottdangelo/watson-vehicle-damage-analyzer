@@ -29,7 +29,7 @@ const child_process = require("child_process");
 const WatsonVisRecSetup= require('./lib/watson-visRec-setup');
 
 const visual_recognition = watson.visual_recognition({
-    api_key: "",
+    api_key: credentials.api_key,
     version: "v3",
     version_date: "2016-05-20"
 });
@@ -39,18 +39,8 @@ var custom_classifier = null;
 // setupError will be set to an error message if we cannot recover from service setup or init error.
 let setupError = '';
 
-//const visRecCredentials = vcapServices.getCredentials('visRec');
-
-//const visRec = watson.visRec({
-// password: visRecCredentials.password,
-//  username: visRecCredentials.username,
-//  version_date: '2017-04-27',
-//  version: 'v1'
-//});
-
 let visRecParams; // visRecParams will be set after WatsonVisRecSetup is run and callback is issued
 const visRecSetup = new WatsonVisRecSetup(visual_recognition);
-//const visRecSetup = new WatsonVisRecSetup(visRec);
 const visRecSetupParams = {
   "classifiers": [
     {
