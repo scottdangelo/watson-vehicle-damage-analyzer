@@ -18,6 +18,10 @@
 /*jslint es6 */
 "use strict";
 
+require('dotenv').config({
+  silent: true
+});
+
 const fs = require("fs");
 const watson = require("watson-developer-cloud");
 const express = require("express");
@@ -71,8 +75,8 @@ function handleSetupError(reason) {
   console.error('The app failed to initialize properly. Setup and restart needed.' + setupError);
   // For testing allow the app to run. It would just report the above error.
   // Or we can add the following 2 lines to abort on a setup error allowing Bluemix to restart it.
-  //console.error('\nAborting due to setup error!');
-  //process.exit(1);
+  console.error('\nAborting due to setup error!');
+  process.exit(1);
 }
 
 application.use(express.static(__dirname + "/public"));
