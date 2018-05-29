@@ -41,7 +41,7 @@ This code pattern contains several pieces. The app server communicates with the 
 
 ## Deploy the server application to IBM Cloud
 
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM/watson-vehicle-damage-analyzer)
+[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/scottdangelo/watson-vehicle-damage-analyzer)
 
 Press the above ``Deploy to IBM Cloud`` button and then click on ``Deploy`` and then jump to step #5.
 

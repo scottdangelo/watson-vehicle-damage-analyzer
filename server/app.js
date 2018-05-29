@@ -33,8 +33,9 @@ const child_process = require("child_process");
 const WatsonVisRecSetup= require('./lib/watson-visRec-setup');
 
 const visual_recognition = watson.visual_recognition({
+    url: "https://gateway.watsonplatform.net/visual-recognition/api"
     version: "v3",
-    version_date: "2016-05-20"
+    version_date: "2018-03-19"
 });
 
 var custom_classifier = null;
