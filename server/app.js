@@ -52,7 +52,6 @@ const visRecSetupParams = {
   ]
 }
 
-/*
 visRecSetup.setupVisRec(visRecSetupParams, (err, data) => {
   if (err) {
     handleSetupError(err);
@@ -62,7 +61,6 @@ visRecSetup.setupVisRec(visRecSetupParams, (err, data) => {
     custom_classifier = data.classifier_id;
   }
 });
-*/
 
 /**
  * Handle setup errors by logging and appending to the global error text.
